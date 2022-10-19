@@ -10,11 +10,9 @@
 
   <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
     <Optimize>true</Optimize>
-    <PublishSingleFile>true</PublishSingleFile>
-    <PublishReadyToRun>true</PublishReadyToRun>
-    <PublishReadyToRunComposite>true</PublishReadyToRunComposite>
-    <RunAOTCompilation>true</RunAOTCompilation>
-    <PublishTrimmed>true</PublishTrimmed>
+    <TargetFramework>net7.0</TargetFramework>
+    <StripSymbols>true</StripSymbols>
+    <PublishAot>true</PublishAot>
   </PropertyGroup>
 
 </Project>
