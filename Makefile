@@ -7,6 +7,9 @@ test: publish
 	./test.sh
 
 publish:
-	~/dotnet/dotnet publish -c Release
-	cp ./bin/Release/net6.0/linux-x64/publish/app ./app
-	zip ./app.zip ./app ./src/* ./app.csproj ./Makefile ./main.c
+	dotnet publish -c Release --self-contained
+	cp bin/Release/net6.0/linux-x64/publish/app app
+	zip app.zip Makefile main.c app src/* app.csproj
+
+clean:
+	rm app.zip app

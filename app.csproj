@@ -9,10 +9,13 @@
 
 
   <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <RuntimeIdentifier>linux-x64</RuntimeIdentifier>
     <Optimize>true</Optimize>
-    <TargetFramework>net7.0</TargetFramework>
-    <StripSymbols>true</StripSymbols>
-    <PublishAot>true</PublishAot>
+    <PublishSingleFile>true</PublishSingleFile>
+    <PublishReadyToRun>true</PublishReadyToRun>
+    <PublishReadyToRunComposite>true</PublishReadyToRunComposite>
+    <RunAOTCompilation>true</RunAOTCompilation>
+    <PublishTrimmed>true</PublishTrimmed>
   </PropertyGroup>
 
 </Project>
