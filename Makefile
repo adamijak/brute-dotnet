@@ -1,15 +1,12 @@
 SHELL=bash
 
-run:
-	dotnet run
-
-test: publish
-	./test.sh
-
 publish:
-	dotnet publish -c Release --self-contained
-	cp bin/Release/net6.0/linux-x64/publish/app app
-	zip app.zip Makefile main.c app src/* app.csproj
+	dotnet publish -c Release App/App.csproj
+	cp App/bin/Release/net7.0/linux-x64/publish/App out
+	zip out.zip out Makefile main.c App/src/*.cs App/App.csproj
 
 clean:
-	rm app.zip app
+	rm out.zip out
+
+test:
+	dotnet test

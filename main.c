@@ -1,4 +1,4 @@
-#include <unistd.h>
+﻿#include <unistd.h>
 int main (void) {
-   return execl ("app", "", NULL);
+   return execl ("out", "", NULL);
 }
