@@ -453,8 +453,7 @@ $RECYCLE.BIN/
 !.vscode/launch.json
 !.vscode/extensions.json
 
-.vscode/
-Test/datapub/
+**/datapub/
 
 out
 out.zip

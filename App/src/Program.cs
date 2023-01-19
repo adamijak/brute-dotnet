@@ -1,10 +1,20 @@
 ﻿namespace App;
 public partial class Program
 {
-    private static int Main(string[] args) => Run(Console.In, Console.Out);
-    public static int Run(TextReader input, TextWriter output)
+    private static int Main(string[] args)
     {
-        output.WriteLine("Hello Brute!");
-        return 0;
+        var algo = default(Algorithm);
+        if (args.Length == 1)
+        {
+            var inputStream = File.OpenRead(args[0]);
+            var inputReader = new StreamReader(inputStream);
+            algo = new Algorithm(inputReader, Console.Out);
+        }
+        else
+        {
+            algo = new Algorithm(Console.In, Console.Out);
+        }
+
+        return algo.Run();
     }
 }

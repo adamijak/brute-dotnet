@@ -1,26 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
-
-  <PropertyGroup>
-    <OutputType>Exe</OutputType>
-    <TargetFramework>net7.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-    <Configurations>Release;Debug</Configurations>
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<TargetFramework>net7.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<Configurations>Release;Debug</Configurations>
+	</PropertyGroup>
+	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+		<DebugType>
+		</DebugType>
+		<Optimize>true</Optimize>
+		<WarningLevel>4</WarningLevel>
+		<PublishSingleFile>true</PublishSingleFile>
+		<PublishTrimmed>true</PublishTrimmed>
+		<PublishReadyToRun>true</PublishReadyToRun>
+		<StripSymbols>true</StripSymbols>
+		<PublishReadyToRunComposite>true</PublishReadyToRunComposite>
+		<RunAOTCompilation>true</RunAOTCompilation>
+		<SelfContained>true</SelfContained>
+		<RuntimeIdentifier>linux-x64</RuntimeIdentifier>
+	</PropertyGroup>
+	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+		<WarningLevel>4</WarningLevel>
+	</PropertyGroup>
+	  <PropertyGroup Condition=" '$(RunConfiguration)' == 'Default' ">
+    <StartAction>Project</StartAction>
+    <StartArguments></StartArguments>
+    <ExternalConsole>true</ExternalConsole>
   </PropertyGroup>
-
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType></DebugType>
-    <Optimize>true</Optimize>
-    <PublishSingleFile>true</PublishSingleFile>
-    <PublishTrimmed>true</PublishTrimmed>
-    <PublishReadyToRun>true</PublishReadyToRun>
-    <StripSymbols>true</StripSymbols>
-    <PublishReadyToRunComposite>true</PublishReadyToRunComposite>
-    <RunAOTCompilation>true</RunAOTCompilation>
-    <SelfContained>true</SelfContained>
-    <RuntimeIdentifier>linux-x64</RuntimeIdentifier>
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'Pub01' ">
+    <StartAction>Project</StartAction>
+    <StartArguments>"$(ProjectDir)/datapub/pub01.in"</StartArguments>
+    <ExternalConsole>true</ExternalConsole>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <WarningLevel>4</WarningLevel>
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'Pub02' ">
+    <StartAction>Project</StartAction>
+    <StartArguments>"$(ProjectDir)/datapub/pub02.in"</StartArguments>
+    <ExternalConsole>true</ExternalConsole>
   </PropertyGroup>
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'Pub03' ">
+    <StartAction>Project</StartAction>
+    <StartArguments>"$(ProjectDir)/datapub/pub03.in"</StartArguments>
+    <ExternalConsole>true</ExternalConsole>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'Pub04' ">
+    <StartAction>Project</StartAction>
+    <StartArguments>"$(ProjectDir)/datapub/pub04.in"</StartArguments>
+    <ExternalConsole>true</ExternalConsole>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'Pub05' ">
+    <StartAction>Project</StartAction>
+    <StartArguments>"$(ProjectDir)/datapub/pub05.in"</StartArguments>
+    <ExternalConsole>true</ExternalConsole>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'Pub06' ">
+    <StartAction>Project</StartAction>
+    <StartArguments>"$(ProjectDir)/datapub/pub06.in"</StartArguments>
+    <ExternalConsole>true</ExternalConsole>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'Pub07' ">
+    <StartAction>Project</StartAction>
+    <StartArguments>"$(ProjectDir)/datapub/pub07.in"</StartArguments>
+    <ExternalConsole>true</ExternalConsole>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'Pub08' ">
+    <StartAction>Project</StartAction>
+    <StartArguments>"$(ProjectDir)/datapub/pub08.in"</StartArguments>
+    <ExternalConsole>true</ExternalConsole>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'Pub09' ">
+    <StartAction>Project</StartAction>
+    <StartArguments>"$(ProjectDir)/datapub/pub09.in"</StartArguments>
+    <ExternalConsole>true</ExternalConsole>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'Pub10' ">
+    <StartAction>Project</StartAction>
+    <StartArguments>"$(ProjectDir)/datapub/pub10.in"</StartArguments>
+    <ExternalConsole>true</ExternalConsole>
+  </PropertyGroup>
+	<ItemGroup>
+		<None Update="datapub\**">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+	</ItemGroup>
 </Project>
