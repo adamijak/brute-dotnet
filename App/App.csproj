@@ -24,63 +24,64 @@
 	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
 		<WarningLevel>4</WarningLevel>
 	</PropertyGroup>
-	  <PropertyGroup Condition=" '$(RunConfiguration)' == 'Default' ">
-    <StartAction>Project</StartAction>
-    <StartArguments></StartArguments>
-    <ExternalConsole>true</ExternalConsole>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(RunConfiguration)' == 'Pub01' ">
-    <StartAction>Project</StartAction>
-    <StartArguments>"$(ProjectDir)/datapub/pub01.in"</StartArguments>
-    <ExternalConsole>true</ExternalConsole>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(RunConfiguration)' == 'Pub02' ">
-    <StartAction>Project</StartAction>
-    <StartArguments>"$(ProjectDir)/datapub/pub02.in"</StartArguments>
-    <ExternalConsole>true</ExternalConsole>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(RunConfiguration)' == 'Pub03' ">
-    <StartAction>Project</StartAction>
-    <StartArguments>"$(ProjectDir)/datapub/pub03.in"</StartArguments>
-    <ExternalConsole>true</ExternalConsole>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(RunConfiguration)' == 'Pub04' ">
-    <StartAction>Project</StartAction>
-    <StartArguments>"$(ProjectDir)/datapub/pub04.in"</StartArguments>
-    <ExternalConsole>true</ExternalConsole>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(RunConfiguration)' == 'Pub05' ">
-    <StartAction>Project</StartAction>
-    <StartArguments>"$(ProjectDir)/datapub/pub05.in"</StartArguments>
-    <ExternalConsole>true</ExternalConsole>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(RunConfiguration)' == 'Pub06' ">
-    <StartAction>Project</StartAction>
-    <StartArguments>"$(ProjectDir)/datapub/pub06.in"</StartArguments>
-    <ExternalConsole>true</ExternalConsole>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(RunConfiguration)' == 'Pub07' ">
-    <StartAction>Project</StartAction>
-    <StartArguments>"$(ProjectDir)/datapub/pub07.in"</StartArguments>
-    <ExternalConsole>true</ExternalConsole>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(RunConfiguration)' == 'Pub08' ">
-    <StartAction>Project</StartAction>
-    <StartArguments>"$(ProjectDir)/datapub/pub08.in"</StartArguments>
-    <ExternalConsole>true</ExternalConsole>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(RunConfiguration)' == 'Pub09' ">
-    <StartAction>Project</StartAction>
-    <StartArguments>"$(ProjectDir)/datapub/pub09.in"</StartArguments>
-    <ExternalConsole>true</ExternalConsole>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(RunConfiguration)' == 'Pub10' ">
-    <StartAction>Project</StartAction>
-    <StartArguments>"$(ProjectDir)/datapub/pub10.in"</StartArguments>
-    <ExternalConsole>true</ExternalConsole>
-  </PropertyGroup>
+	<PropertyGroup Condition=" '$(RunConfiguration)' == 'Default' ">
+		<StartAction>Project</StartAction>
+		<StartArguments>
+		</StartArguments>
+		<ExternalConsole>true</ExternalConsole>
+	</PropertyGroup>
+	<PropertyGroup Condition=" '$(RunConfiguration)' == 'Pub01' ">
+		<StartAction>Project</StartAction>
+		<StartArguments>"$(ProjectDir)/datapub/pub01.in"</StartArguments>
+		<ExternalConsole>true</ExternalConsole>
+	</PropertyGroup>
+	<PropertyGroup Condition=" '$(RunConfiguration)' == 'Pub02' ">
+		<StartAction>Project</StartAction>
+		<StartArguments>"$(ProjectDir)/datapub/pub02.in"</StartArguments>
+		<ExternalConsole>true</ExternalConsole>
+	</PropertyGroup>
+	<PropertyGroup Condition=" '$(RunConfiguration)' == 'Pub03' ">
+		<StartAction>Project</StartAction>
+		<StartArguments>"$(ProjectDir)/datapub/pub03.in"</StartArguments>
+		<ExternalConsole>true</ExternalConsole>
+	</PropertyGroup>
+	<PropertyGroup Condition=" '$(RunConfiguration)' == 'Pub04' ">
+		<StartAction>Project</StartAction>
+		<StartArguments>"$(ProjectDir)/datapub/pub04.in"</StartArguments>
+		<ExternalConsole>true</ExternalConsole>
+	</PropertyGroup>
+	<PropertyGroup Condition=" '$(RunConfiguration)' == 'Pub05' ">
+		<StartAction>Project</StartAction>
+		<StartArguments>"$(ProjectDir)/datapub/pub05.in"</StartArguments>
+		<ExternalConsole>true</ExternalConsole>
+	</PropertyGroup>
+	<PropertyGroup Condition=" '$(RunConfiguration)' == 'Pub06' ">
+		<StartAction>Project</StartAction>
+		<StartArguments>"$(ProjectDir)/datapub/pub06.in"</StartArguments>
+		<ExternalConsole>true</ExternalConsole>
+	</PropertyGroup>
+	<PropertyGroup Condition=" '$(RunConfiguration)' == 'Pub07' ">
+		<StartAction>Project</StartAction>
+		<StartArguments>"$(ProjectDir)/datapub/pub07.in"</StartArguments>
+		<ExternalConsole>true</ExternalConsole>
+	</PropertyGroup>
+	<PropertyGroup Condition=" '$(RunConfiguration)' == 'Pub08' ">
+		<StartAction>Project</StartAction>
+		<StartArguments>"$(ProjectDir)/datapub/pub08.in"</StartArguments>
+		<ExternalConsole>true</ExternalConsole>
+	</PropertyGroup>
+	<PropertyGroup Condition=" '$(RunConfiguration)' == 'Pub09' ">
+		<StartAction>Project</StartAction>
+		<StartArguments>"$(ProjectDir)/datapub/pub09.in"</StartArguments>
+		<ExternalConsole>true</ExternalConsole>
+	</PropertyGroup>
+	<PropertyGroup Condition=" '$(RunConfiguration)' == 'Pub10' ">
+		<StartAction>Project</StartAction>
+		<StartArguments>"$(ProjectDir)/datapub/pub10.in"</StartArguments>
+		<ExternalConsole>true</ExternalConsole>
+	</PropertyGroup>
 	<ItemGroup>
-		<None Update="datapub\**">
+		<None Update=".\datapub\**">
 			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 		</None>
 	</ItemGroup>
