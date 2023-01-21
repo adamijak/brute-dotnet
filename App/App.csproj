@@ -37,7 +37,7 @@
 	</PropertyGroup>
 	<PropertyGroup Condition=" '$(RunConfiguration)' == 'Pub02' ">
 		<StartAction>Project</StartAction>
-		<StartArguments>"./datapub/datapub/pub02.in"</StartArguments>
+		<StartArguments>"./datapub/pub02.in"</StartArguments>
 		<ExternalConsole>true</ExternalConsole>
 	</PropertyGroup>
 	<PropertyGroup Condition=" '$(RunConfiguration)' == 'Pub03' ">
